@@ -1,0 +1,73 @@
+import cv2
+img = cv2.imread("solar-system.jpg")
+greyimg=cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+cv2.putText(img,
+            "Sun",
+            (20,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            )
+cv2.putText(img,
+            "Mercury",
+            (40,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            )
+cv2.putText(img,
+            "Venus",
+            (60,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            ) 
+cv2.putText(img,
+            "Earth",
+            (80,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            )   
+            
+cv2.putText(img,
+            "Mars",
+            (100,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            ) 
+            
+cv2.putText(img,
+            "Jupiter",
+            (120,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            ) 
+             
+cv2.putText(img,
+            "Saturn",
+            (140,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            ) 
+cv2.putText(img,
+            "Neptune",
+            (160,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            ) 
+                         
+cv2.putText(img,
+            "Uranus",
+            (180,300),
+            cv2.FONT_HERSHEY_TRIPLEX,
+            0.5,
+            (255,255,255)
+            )            
+cv2.imshow("graying",greyimg)
+print(greyimg)
+cv2.waitkey(70)
